@@ -4,7 +4,9 @@ A repository for all things Raspberry Pi related
 
 ## Code Example
 
-SdCardPrep.py is used to dump a bootable image onto an SD card in preparation for building a new OS. 
+*gpio_test.py* is a simple program with no command line options. It is simply to demonstrate how to set up and read the state of 2 GPIO pins on a Raspberry Pi. You can change the pin numbers and modify this code to read any number of pins. This example was written using a Hall effect sensor which was trigger by moving a magnet in front of it. Hence the print statements, _Tiggered_ and _Not Triggered_ .
+
+*SdCardPrep.py* is used to dump a bootable image onto an SD card in preparation for building a new OS. 
 
 ```
 usage: SdCardPrep.py [-h] sdcard {2,3,4} imgfile
@@ -24,7 +26,7 @@ optional arguments:
 
 ## Motivation
 
-Setting up many Raspberry Pis by hand takes a long time. The goal is to speed this up.
+Setting up a Raspberry Pi is fun, but not trival for everyone. These scripts are meant as a quick introduction to some things I found interesting when setting up and playing with the boards. 
 
 ## Installation
 
