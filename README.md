@@ -2,6 +2,10 @@
 
 A repository for all things Raspberry Pi related
 
+## Motivation
+
+Setting up a Raspberry Pi is fun, but not trival for everyone. These scripts are meant as a quick introduction to some things I found interesting when setting up and playing with the boards. 
+
 ## Code Description
 
 **gpio_test.py** is a simple program with no command line options. It is simply to demonstrate how to set up and read the state of 2 GPIO pins on a Raspberry Pi. You can change the pin numbers and modify this code to read any number of pins. This example was written using a Hall effect sensor which was trigger by moving a magnet in front of it. Hence the print statements, _Tiggered_ and _Not Triggered_ .
@@ -25,10 +29,6 @@ optional arguments:
 ```
 
 Insert the SD and use the disk utility to determine its disk number, e.g. /dev/disk2. In this case we would enter 2 as the second command line option. See below for an example run.  
-
-## Motivation
-
-Setting up a Raspberry Pi is fun, but not trival for everyone. These scripts are meant as a quick introduction to some things I found interesting when setting up and playing with the boards. 
 
 ## Installation
 
