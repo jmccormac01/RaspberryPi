@@ -36,7 +36,7 @@ Clone the repositiory using:
 ```
 git clone git@github.com:jmccormac01/RaspberryPi.git
 ```
-and voila. Run any of the scripts with the -h option to see the usage menu and description. 
+and voila. Run any of the scripts with the -h option (if it takes command line arguments) to see the usage menu and description. 
 
 ## API Reference
 
