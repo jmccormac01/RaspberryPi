@@ -2,11 +2,11 @@
 
 A repository for all things Raspberry Pi related
 
-## Code Example
+## Code Description
 
 **gpio_test.py** is a simple program with no command line options. It is simply to demonstrate how to set up and read the state of 2 GPIO pins on a Raspberry Pi. You can change the pin numbers and modify this code to read any number of pins. This example was written using a Hall effect sensor which was trigger by moving a magnet in front of it. Hence the print statements, _Tiggered_ and _Not Triggered_ .
 
-**SdCardPrep.py** is used to dump a bootable image onto an SD card in preparation for building a new OS. 
+**SdCardPrep.py** is used to dump a bootable image onto an SD card in preparation for building a new OS. This has been written and tested using Mac OSX Yosemite. 
 
 ```
 usage: SdCardPrep.py [-h] sdcard {2,3,4} imgfile
@@ -23,6 +23,8 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 ```
+
+Insert the SD and use the disk utility to determine its disk number, e.g. /dev/disk2. In this case we would enter 2 as the second command line option. See below for an example run.  
 
 ## Motivation
 
@@ -42,7 +44,7 @@ N/A
 
 ## Tests
 
-Example run preparing an SD card with Jessie using SdCardPrep.py:
+Example run preparing an SD card with Jessie using SdCardPrep.py. Before running SdCardPrep.py I used disk utility to determine that my SD card was /dev/disk2. Therefore I used 2 as the second command line option. When inserted my SD card mounts as /Volumes/UNTITLED and the image I want to dump onto the SD card is 2015-11-21-raspbian-jessie.img, which is located in /Users/James/Downloads/. 
 
 ```
 ▶ python SdCardPrep.py /Volumes/UNTITLED 2 /Users/James/Downloads/2015-11-21-raspbian-jessie.img
