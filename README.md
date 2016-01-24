@@ -55,7 +55,8 @@ To continue type: 'do it': do it
 Ok, let's go!
 Unmounting /dev/disk2
 Using dd to copy /Users/James/Downloads/2015-11-21-raspbian-jessie.img --> /dev/disk2
-This may take some time...
+This may take some time
+Enter the root password
 Password:
 3752+0 records in
 3752+0 records out
